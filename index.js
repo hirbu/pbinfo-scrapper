@@ -89,7 +89,7 @@ puppeteer
 
             const downloader = new Downloader({
                 url: `https://www.pbinfo.ro/php/descarca-sursa.php?id=${id}`,
-                directory: './solutii',
+                directory: './solutions',
                 headers: {
                     Cookie: `SSID=${cookies[0].value}; vizitator_track=${cookies[5].value};`,
                 },
