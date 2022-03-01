@@ -25,8 +25,9 @@ puppeteer
         await page.goto('https://www.pbinfo.ro/')
 
         await page.$eval('#user', (el) => (el.value = 'YOUR USERNAME HERE'))
-        
-	await page.$eval('#parola', (el) => (el.value = 'YOUR PASSWORD HERE')) await page.$eval('#form-login', (el) =>
+
+        await page.$eval('#parola', (el) => (el.value = 'YOUR PASSWORD HERE'))
+        await page.$eval('#form-login', (el) =>
             el.querySelector('button').click(),
         )
 
@@ -119,4 +120,3 @@ const no_ăîâțș = (str) => {
         })
         .join('')
 }
-
